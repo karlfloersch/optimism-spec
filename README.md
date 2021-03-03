@@ -54,7 +54,11 @@
   * NOTE: I would separate this contracts into "groups" more than the current dir structure. Which form clusters and which can be run independently?
   * NOTE: This is the most important part to have a spec for. If you want to get contracts audited, the auditer must understand the intended functionality before understanding what a deviation looks like.
   * NOTE: The contracts here that keep L2 chain state should be the slowest to change, if ever.
-  * Why is the AddressManager in lib?!
+  * Other thoughts:
+    * Remove all interfaces for contracts that shouldn't be accessed from the outside world
+    * Why is the AddressManager in lib? It's a contract that's deployed, right?
+    * What should OVMCodec be called? What's a codec?
+    * I don't think the "wrappers" should be in lib
 
 ## Upgradablity
 * Contracts on L1 can be upgraded?
