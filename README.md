@@ -48,6 +48,7 @@
 * Contracts on L1 can be upgraded?
   * Be careful with where the submitted state actually lives, that's the thing to not lose
   * I assume in OVM_CanonicalTransactionChain and OVM_StateCommitmentChain, anywhere else?
+  * I also see three OVM_ChainStorageContainer, these are state too?
 * L2 OS contracts come from a special genesis contract on L1 (remove state-dump.latest.json, at least please rename it)
 * The L2 contracts can be upgraded using transactions from L1, and this keeps them in time order
 
