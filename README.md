@@ -38,6 +38,13 @@
   * Message passer
   * Fraud prover submission
 * Contracts -- 8414!
+  * 4406 in the OVM
+    * accounts -- 137
+    * bridge -- 587
+    * chain -- 1165
+    * execution -- 1577
+    * precompiles -- 334
+    * verification -- 606
   * See [list of L1 contracts](https://github.com/cheapETH/cheapoptimism/blob/master/addresses.json)
   * See [list of L2 contracts](https://github.com/cheapETH/cheapoptimism/blob/master/state-dump.latest.json)
   * Operating System Contracts (L2 contracts)
