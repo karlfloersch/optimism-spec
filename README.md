@@ -56,6 +56,7 @@
   * Be careful with where the submitted state actually lives, that's the thing to not lose
   * OVM_CanonicalTransactionChain and OVM_StateCommitmentChain are accessors?
   * I also see three OVM_ChainStorageContainer, this is the actual state? Is it all of it?
+    * Is there an OVM state explorer which can query and parse this container contracts?
 * L2 OS contracts come from a special genesis contract on L1 (remove state-dump.latest.json, at least please rename it)
 * The L2 contracts can be upgraded using transactions from L1, and this keeps them in time order
 
