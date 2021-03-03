@@ -59,6 +59,7 @@
     * Why is the AddressManager in lib? It's a contract that's deployed, right?
     * What should OVMCodec be called? What's a codec?
     * I don't think the "wrappers" should be in lib
+    * All this "compression" stuff should go, seems like premature optimization
 
 ## Upgradablity
 * Contracts on L1 can be upgraded?
