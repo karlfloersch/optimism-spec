@@ -4,7 +4,7 @@
 * Add an RPC to metamask (with wallet_addEthereumChain hopefully, or manually)
 * Switch the compiler from solc -> solcovm
 * Optimism L2 should behave like L1
-  * Value works
+  * Value works in metamask like normal
   * Contracts work compiled with ovm
   * Uniswap and Synthetix should work
 * Native currency on both is ETH, and fees are paid similarly
