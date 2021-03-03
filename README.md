@@ -10,7 +10,9 @@
 * Native currency on both is ETH, and fees are paid similarly
   * Put more weight on size of calldata? (like TxDataNonZeroGasEIP2028)
 * Fast deposit by sending ETH to a special address on L1, shows up in L2
+  * Get the ENS name l2deposit.eth or something. This can also be triggered from a web ui, but it's just a send on metamask.
 * Slow withdrawal by sending ETH to a special address on L2, shows up back in L1 7 days later
+  * More thought should be given to this, as it's a "burn" on L2, right?
 * Generic trusted messaging bridge people can use as a primitive (TODO: add link here to API)
 * Avoid regenesis and keep continuity with existing L2 mainnet chain
 
