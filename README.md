@@ -12,6 +12,7 @@
 * Fast deposit by sending ETH to a special address on L1, shows up in L2
 * Slow withdrawal by sending ETH to a special address on L2, shows up back in L1 7 days later
 * Generic trusted messaging bridge people can use as a primitive (TODO: add link here to API)
+* Avoid regenesis and keep continuity with existing L2 mainnet chain
 
 ## Non Goals
 * For now, a fully controlled Proof of Authority chain is okay
@@ -56,7 +57,7 @@
   * Be careful with where the submitted state actually lives, that's the thing to not lose
   * OVM_CanonicalTransactionChain and OVM_StateCommitmentChain are accessors?
   * I also see three OVM_ChainStorageContainer, this is the actual state? Is it all of it?
-    * Is there an OVM state explorer which can query and parse this container contracts?
-* L2 OS contracts come from a special genesis contract on L1 (remove state-dump.latest.json, at least please rename it)
-* The L2 contracts can be upgraded using transactions from L1, and this keeps them in time order
+    * Is there an OVM state explorer which can query and parse these container contracts?
+* L2 OS contracts come from a special genesis contract on L1 (remove state-dump.latest.json)
+* The L2 contracts can be upgraded using transactions from L1, and this keeps them in time order. This will be key to preventing regenesis.
 
