@@ -25,7 +25,7 @@
 * tx is submitted into [l2geth](https://github.com/ethereum-optimism/go-ethereum) (TODO: rename this repo to l2geth?)
 * It is processed mostly by the [contracts](https://github.com/ethereum-optimism/contracts) that define the OVM operating system (TODO: rename this ovm-os-contracts or something)
 * The single [batch submitter](https://github.com/ethereum-optimism/batch-submitter) submits both the transaction and the new state root
-* The [data transport layer](https://github.com/ethereum-optimism/data-transport-layer) (TODO: rename this repo to l1-indexer or something) reads the submitted transaction and state root in L1.
+* The [data transport layer](https://github.com/ethereum-optimism/data-transport-layer) (TODO: rename this repo to l1-tx-indexer or something) reads the submitted transaction and state root in L1.
 
 ## Number of lines
 * Compiler -- 300?
