@@ -4,7 +4,10 @@
 * Add an RPC to metamask (with wallet_addEthereumChain hopefully, or manually)
 * Switch the compiler from solc -> solcovm
 * Optimism L2 should behave like L1
+  * Value works
+  * Contracts work compiled with ovm
 * Native currency on both is ETH, and fees are paid similarly
+  * Put more weight on size of calldata? (like TxDataNonZeroGasEIP2028)
 * Fast deposit by sending ETH to a special address on L1, shows up in L2
 * Slow withdrawal by sending ETH to a special address on L2, shows up back in L1 7 days later
 * Generic trusted messaging bridge people can use as a primitive (TODO: add link here to API)
@@ -26,19 +29,20 @@
 ## Number of lines
 * Compiler -- 300?
 * l2geth -- 1000?
-** This should fetch the addresses from address manager through data-transport-layer
-** This should do very little processing, and leave that to the Operating System Contracts
+  * This should fetch the addresses from address manager through data-transport-layer
+  * This should do very little processing, and leave that to the Operating System Contracts
 * data-transport-layer -- 2243 (this should merge into l2geth)
 * batch-submitter -- 1243
 * optimism-ts-services -- 2312 (this should merge with batch-submitter)
-** Message passer
-** Fraud prover submission
+  * Message passer
+  * Fraud prover submission
 * Contracts -- 8414!
-** Operating System Contracts (L2 contracts)
-** Fraud prover contracts (L1 contracts)
+  * Operating System Contracts (L2 contracts)
+  * Fraud prover contracts (L1 contracts)
 
 ## Upgradablity
 * Contracts on L1 can be upgraded?
-* The L2 contracts can be upgraded using transactions from L1
+  * Be careful with where the state actually lives
 * L2 OS contracts come from a special genesis contract on L1 (remove state-dump.latest.json)
+* The L2 contracts can be upgraded using transactions from L1
 
